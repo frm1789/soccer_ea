@@ -4,7 +4,7 @@ library(ggplot2)
 library(readr)
 
 url_soccer <- 'https://raw.githubusercontent.com/frm1789/soccer_ea/master/Example_Data_format_ggplot_geom_tile.csv'
-df_exa <- read_csv(url(url_soccer)
+df_exa <- read_csv(url_soccer)
 
 ggplot(data = df_exa, aes(x = df_exa$country, y = df_exa$metric)) +
   geom_tile(aes(fill = df_exa$value)) +
